@@ -8,4 +8,8 @@ var Router = Ember.Router.extend({
 Router.map(function() {
 });
 
-export default Router;
+export default Router.map(function() {
+  this.resource('tunes', function() {
+    this.resource('tune', { path: '/:tune_id' });
+  });
+});

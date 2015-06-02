@@ -1,9 +1,16 @@
-<h2>Biznz</h2>
+{{#md-navbar name='d(-.-)b' class='indigo'}}
+  {{#link-to 'index' tagName='li'}}
+    <a>Home</a>
+  {{/link-to}}
+  {{#link-to 'tunes' tagName='li'}}
+    <a>All Tunes</a>
+  {{/link-to}}
+{{/md-navbar}}
 
 <ul>
   <li>{{link-to 'Home' 'index'}}</li>
   <li>{{link-to 'Tunes' 'tunes'}}</li>
-   
+  <li>{{link-to 'Genres' 'genres'}}</li> 
 </ul>
 
 {{md-badge class="new" text="6"}}

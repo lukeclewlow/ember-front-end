@@ -1,0 +1,11 @@
+<ul>
+  {{#each genre in model}}
+    <li>
+      {{#link-to 'genre' genre}}
+        {{genre.name}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No tunes found.</li>
+  {{/each}}
+</ul>

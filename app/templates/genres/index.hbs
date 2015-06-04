@@ -3,9 +3,22 @@
     <li>
       {{#link-to 'genre' genre}}
         {{genre.name}}
+        {{genre.tunes}}
       {{/link-to}}
     </li>
   {{else}}
     <li>No tunes found.</li>
   {{/each}}
+</ul>
+
+<ul>
+	{{#each genre in model}}
+    <li>{{genre.name}}</li>
+	  {{#each tune in genre.tunes}}
+
+		
+    	<li>{{tune.title}}</li>
+
+		{{/each}}
+	{{/each}}
 </ul>

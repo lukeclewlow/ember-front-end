@@ -4,5 +4,6 @@ export default DS.Model.extend({
   artist: DS.attr('string'),
   title: DS.attr('string'),
   link: DS.attr('string'),
-  blog: DS.attr('string')
+  blog: DS.attr('string'),
+  genre: DS.belongsTo('genre', { async: true }, {embedded: 'always'} )
 });

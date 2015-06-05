@@ -1,7 +1,6 @@
 # Ember-front-end
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is the beginnings of a front end built with EmberJS. It is made to interact with the RESTful Rails API I have built in a seperate Git Project. This is my first foray into using Ember, so my first aim is to be able to make effective GET requests and filter and display the relevant data.
 
 ## Prerequisites
 
